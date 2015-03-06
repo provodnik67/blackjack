@@ -1,0 +1,91 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="lib.js"></script>
+        <style>
+        #page-wrapper {
+            position: relative;
+            width: 930px;
+        }
+        #content {
+            width: 700px;
+            float: left;
+            margin: 0 30px 0 0;
+        }
+        .card {
+            height: 158px;
+            width: 113px;
+            margin: 5px 0 0 5px;
+            float: left;
+        }
+        .clear {
+            clear: both;
+        }
+        .dealer, .player {
+            min-height: 158px;
+            padding: 10px;
+            border: 1px solid;
+            overflow: auto;
+            margin: 0 0 0 0;
+        }
+        .controls {
+            margin: 10px 0 0 0;
+        }
+        .your_money, .casino_money {
+            margin: 10px;
+        }
+        #double, #hit, #stand, #next {
+            margin: 0 0 0 10px;
+        }
+        .bet {
+            margin: 20px 0 0 0;
+        }
+        #rules {
+            float: right;
+            width: 200px;
+            font-size: 0.9em;
+        }
+        #content p {
+            margin-bottom: 0;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="page-wrapper">
+            <div id="content">
+                <div class="card_sample"></div>
+                <div class="game_field">
+                    <div class="casino_money"></div>
+                    <p><b>Казино</b></p>
+                    <div class="dealer"></div>
+                    <div class="clear"></div>
+                    <div class="bet"></div>
+                    <div class="diag"></div>
+                    <p><b>Игрок</b></p>
+                    <div class="player"></div>
+                    <div class="clear"></div>
+                    <div class="controls">
+                        <a id="double" href="#">Удвоить</a>
+                        <a id="hit" href="#">Ещё</a>
+                        <a id="stand" href="#">Хватит</a>
+                        <a id="next" href="#">Следующая игра</a>
+                    </div>
+                    <div class="your_money"></div>
+                </div>
+            </div>
+            <div id="rules">
+                <p><b>Правила игры в БлекДжек</b></p>
+                <p>Если игрок набрал 21 очко, то автоматически становится победителем (БлекДжек!!!)</p>
+                <p>Все картинки по 10 очков, кроме туза. Туз равен 11 очкам, если сумма всех очков вместе с тузом не превышает 21. В противном случае туз равняется 1 очку</p>
+                <p>Все остальные карты оцениваются по номиналу.</p>
+                <p>Если игрок выбрал "Удвоение", то ставка удваивается. При этом игроку выдается еще одна карта, а дальше играет дилер.</p>
+            </div>
+        </div>
+    </body>
+</html>
